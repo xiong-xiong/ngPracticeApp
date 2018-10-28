@@ -9,7 +9,8 @@ import { UsersComponent } from "./users/users.component";
 import { DetailsComponent } from "./details/details.component";
 
 import { HttpClientModule } from "@angular/common/http";
-import { PostComponent } from './post/post.component';
+import { PostComponent } from "./post/post.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,12 @@ import { PostComponent } from './post/post.component';
     DetailsComponent,
     PostComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
